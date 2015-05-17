@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Angular Data</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Angular -->
+  <script type="text/javascript" src="js/lib/angular/angular.min.js"></script>
+  <script type="text/javascript" src="js/lib/angular/angular-route.min.js"></script>
+  <script type="text/javascript" src="js/lib/angular/angular-animate.min.js"></script>
+
+  <!-- Firebase -->
+  <script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
+  <!-- Angular Firebase -->
+  <script src="https://cdn.firebase.com/libs/angularfire/0.9.2/angularfire.min.js"></script>
+
+  <!-- App and Controllers -->
+
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/services/auth.js"></script>
+    <script type="text/javascript" src="js/controllers/meetings.js"></script>
+    <script type="text/javascript" src="js/controllers/registration.js"></script>
+
+
+</head>
+<body>
+<header>
+	<nav class="cf" ng-include="'views/nav.html'"></nav>
+</header>
+<div class="page">
+	<main class="cf" ng-view>
+  	</main>
+</div>
+</body>
+</html>
